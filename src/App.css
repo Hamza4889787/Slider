@@ -1,38 +1,63 @@
-.App {
+#Slider h1{
+
   text-align: center;
+  text-transform: uppercase;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#Slider .container
+{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+#Slider .Slides
+{
+  display: flex;
+  justify-content: center;
+  margin-top:10px ;
+}
+#Slider .Slides img
+{
+  width: 60px;
+  height: 60px;
+  margin: 0 2px;
+  transition: 0.5s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#Slider .container .slide-show
+{
+  width: 500px;
+  height: 500px;
+}
+#Slider .container button{
+  height: 55px;
+  width:55px;
+  border-radius: 50%;
+    border: none;
+    margin: 0 10px;
+}
+#Slider .container button:hover
+{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition: 0.2s;
+  cursor: pointer;  
+
+}
+
+#Slider .container .slide-show img{
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+/*************** extra css ******************/
+
+.fade{
+  opacity: 0.5;
+}
+.nofade{
+  opacity: 1;
 }
